@@ -23,3 +23,14 @@ du -sh
 
 # 파일 시스템 사용현황
 df -h
+
+# 우분투 버전
+cat /etc/issue
+
+# cpu info
+grep 'physical id' /proc/cpuinfo |uniq | wc -l
+grep 'cpu cores' /proc/cpuinfo | uniq
+ - cpu 갯수 : physical id * cpu cores
+
+# 메모리
+free -h
